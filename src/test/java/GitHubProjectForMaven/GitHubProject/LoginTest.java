@@ -25,6 +25,7 @@ public class LoginTest {
 	{
 		System.out.println("Execusting the test");
 		driver.get("https://www.facebook.com/");
+		driver.getTitle();
 		
 		driver.manage().timeouts().implicitlyWait(20L, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//*[@id=\"email\"]")).sendKeys("kartikbindalkarit@gmail.com");
